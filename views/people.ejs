@@ -1,11 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<%-include("./partials/head.ejs")%>
-<body>
-<%-include("./partials/header.ejs")%>
+  <%-include("./partials/head.ejs")%>
+  <body>
+    <%-include("./partials/header.ejs")%>
+    <!-- insert stuff here -->
+    <div class="hero-people">
+        <h1 class="title-people">People</h1>
+        <div class="label">Mentor</div>
+        <div class="main-prof">
+            <div class="prof-content">
+                <div class="prof">
+                    <img src="sample.png">
+                    <div class="overlay">
+                        <p>
+                            The primary motivation behind Dr. Asthana’s research is the
+                            observation that memory helps individuals to handle everyday
+                            challenges. It aids an individual in providing relevant information
+                            storage and retrieval at the time of need. Memory provides critical
+                            information from remembering appointments made with the doctor to
+                            the navigation of our external world. Dr. Asthana’s ongoing research
+                            aims to understand the psychological, physiological, and cognitive
+                            aspects during memory consolidation and reconsolidation mechanisms.
+                            Current research direction combines behavior, physiological
+                            responses, cognitive, and virtual reality – include: (Biopac), and
+                            DC-stimulator (Solterix). Dr. Asthana has planned and designed
+                            several memory studies using these tools.
+                        </p>
+                    </div>
+                </div>
+                <div class="prof-preview">
+                    <h4>Dr. Manish Kumar Asthana</h4>
+                    <div class="line"></div>
+                    <p>Assistant Professor</p>
+                    <button><a href="/profile">Visit Profile</a></button>
+                </div>
+            </div>
+            
+            
+        </div>
+        
 
-<h1> whatever whatever</h1>
-<%-include("./partials/footer.ejs")%>
-    
-</body>
+        
+            
+
+        
+    </div>
+    <div class="other-content">
+        <div class="label">Research Scholars</div>
+        <div class="other-cards">
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            
+        </div>
+        <div class="label">Interns</div>
+        <div class="other-cards">
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            
+            
+        </div>
+        <div class="label">Alumni</div>
+        <div class="other-cards">
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            <%-include("./partials/peopleMulti.ejs") %>
+            
+            
+        </div>
+           
+    </div>
+
+    <div class="footer">
+        <%- include("./partials/footer.ejs")%>
+      </div>
+  </body>
 </html>
+

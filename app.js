@@ -25,6 +25,12 @@ app.get("/contact-us",(req,res) => {
 app.get("/people",(req,res) => {
     res.render("people");
 });
+app.get("/profile",(req,res) => {
+    res.render("profile");
+});
+app.get("/background",(req,res) => {
+    res.render("background");
+});
 //middleware
 app.use((req, res) => {
     res.render("error");

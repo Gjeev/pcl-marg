@@ -1,235 +1,518 @@
-@import url('https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Noto+Serif&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Jost:wght@300;400&family=Noto+Serif&display=swap");
 
-
-*{
-    margin: 0;
-    padding: 0;
-    scroll-behavior: smooth; /*For smooth scrolling*/
-    font-family: 'Jost', sans-serif;
-    font-weight: 100;
-    box-sizing: border-box;
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth; /*For smooth scrolling*/
+  font-family: "Jost", sans-serif;
+  font-weight: 100;
+  box-sizing: border-box;
 }
 
-h2{
-    font-family: 'Jost', sans-serif;
-    /* font-size: 30px; */
+h2 {
+  font-family: "Jost", sans-serif;
+  /* font-size: 30px; */
 }
-h3{
-    font-family: 'Jost', sans-serif;
-    
-    /* font-size: 25px; */
+h3 {
+  font-family: "Jost", sans-serif;
+
+  /* font-size: 25px; */
 }
-p{
-    /* font-size: larger; */
-    font-family: 'Jost', sans-serif;
+p {
+  /* font-size: larger; */
+  font-family: "Jost", sans-serif;
 }
 .header {
-    background-color: #333;
+  background-color: #333;
 }
 
-#nav_bar{
-    /* width: 100%; */
-    display:flex;
-    padding: 10px;
-    justify-content: space-between;
-    align-items: center;
-    color:black;
-    /* background-color: rgb(0, 179, 255); */
+#nav_bar {
+  /* width: 100%; */
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+  align-items: center;
+  color: black;
+  /* background-color: rgb(0, 179, 255); */
 }
 
 .nav_item_list :hover {
-    text-decoration: underline;
-    cursor: pointer;
+  text-decoration: underline;
+  cursor: pointer;
 }
-.nav_item_list a{
-    text-decoration: none;
-    color: white;
+.nav_item_list a {
+  text-decoration: none;
+  color: white;
 }
-#div1{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    gap:100px;
+#div1 {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
 }
-#nav_items{
-    margin: auto;
-    list-style-type: none;
-    display: flex;
-    justify-content: space-between;
-    gap: 30px;
+#nav_items {
+  margin: auto;
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
 }
-.nav_item_list{
-    padding: 20px;
-    font-size: larger;
-    font-weight: bolder;
+.nav_item_list {
+  padding: 20px;
+  font-size: larger;
+  font-weight: bolder;
 }
 
-#join_us_button{
-    font-size: larger;
-    color: black;
-    font-weight: bolder;
-    background-color: orange;
-    padding: 0px 10px;
-    border: 2px solid orange;
-    margin-left: 50px;
-    border-radius: 7px;
+#join_us_button {
+  font-size: larger;
+  color: black;
+  font-weight: bolder;
+  background-color: orange;
+  padding: 0px 10px;
+  border: 2px solid orange;
+  margin-left: 50px;
+  border-radius: 7px;
 }
 #join_us_button:hover {
-    border-width: 4px;
-    background-color: yellow;
-    transition-duration: 0.4s;
-    cursor: pointer;
-    border-color: yellow;
+  border-width: 4px;
+  background-color: yellow;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  border-color: yellow;
 }
-.bar{
-    display: block;
-    width: 25px;
-    margin: 5px 0px;
-    height: 3px;
-    transition: all 0.3s ease;
-    background-color: white;
+.bar {
+  display: block;
+  width: 25px;
+  margin: 5px 0px;
+  height: 3px;
+  transition: all 0.3s ease;
+  background-color: white;
 }
 /* .bar:hover {
     height: 4px;
     width:30px;
 } */
-#hamburger_section{
-    display: none;
-
+#hamburger_section {
+  display: none;
 }
-@media (max-width:1200px) {
-    #hamburger_section{
-        display: block;
-        justify-self: flex-end;
-    }
-    /* #nav_menu{
+@media (max-width: 1200px) {
+  #hamburger_section {
+    display: block;
+    justify-self: flex-end;
+  }
+  /* #nav_menu{
         display: none;
     } */
-    #IITRlogo{
-        display: none;
-    }
-    #MARGlogo{
-        align-items: center;
-        justify-content: center;
-    }
-    /* #combinedlogo{
+  #IITRlogo {
+    display: none;
+  }
+  #MARGlogo {
+    align-items: center;
+    justify-content: center;
+  }
+  /* #combinedlogo{
         width: 300px;
     } */
-    #hamburger_section.active .bar:nth-child(1){
-        transform: translateY(8.4px) rotate(45deg);
-        /* width: 40px;
+  #hamburger_section.active .bar:nth-child(1) {
+    transform: translateY(8.4px) rotate(45deg);
+    /* width: 40px;
         height: 3px; */
-    }
-    #hamburger_section.active .bar:nth-child(2){
-        opacity: 0%;
-
-    }
-    #hamburger_section.active .bar:nth-child(3){
-        transform: translateY(-8.4px) rotate(-45deg);
-        /* width: 40px;
+  }
+  #hamburger_section.active .bar:nth-child(2) {
+    opacity: 0%;
+  }
+  #hamburger_section.active .bar:nth-child(3) {
+    transform: translateY(-8.4px) rotate(-45deg);
+    /* width: 40px;
         height: 3px; */
-
-    }
-    #nav_bar{
-        display: flex;
-        flex-direction: column;
-    }
-    #div2{
-        display: none;
-        /* left:-100%; */
-    }
-    #div2.active{
-        display: flex;
-        justify-content: center;
-        width: 100%;
-        transition: 0.5s ease-in;
-    }
-    #nav_items{
-        /* top:70px; */
-        list-style-type: none;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-    }
-    .boxes{
-        display: grid;
-        grid-template-columns: auto auto !important; 
-    }
-
-    
-}
-@media (max-width:1000px){
-    .boxes{
-        display: flex !important;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
-.title_marg{
-    /* margin:200px; */
+  }
+  #nav_bar {
+    display: flex;
+    flex-direction: column;
+  }
+  #div2 {
+    display: none;
+    /* left:-100%; */
+  }
+  #div2.active {
+    display: flex;
+    justify-content: center;
     width: 100%;
-    height: 400px;
-    color: white;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url(image/ezgif.com-optimize+\(2\).gif);
-
-/* Background image is centered vertically and horizontally at all times */
-background-position: center center;
-
-/* Background image doesn't tile */
-background-repeat: no-repeat;
-
-/* Background image is fixed in the viewport so that it doesn't move when
-the content's height is greater than the image's height */
-background-attachment: fixed;
-
-/* This is what makes the background image rescale based
-on the container's size */
-background-size: cover;
-
-/* Set a background color that will be displayed
-while the background image is loading */
-background-color: #333;
-}
-#Main{
-    margin-top: 1em;
+    transition: 0.5s ease-in;
+  }
+  #nav_items {
+    /* top:70px; */
+    list-style-type: none;
     display: flex;
     flex-direction: column;
-    /* justify-content: center; */
-    align-items: center;
-}
-.container{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: 50%;
-}
-
-.boxes{
+    gap: 16px;
+  }
+  .boxes {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto !important;
+  }
 }
-.box{
-    background-color: orange;
-    width: 300px;
-    height: auto;
-    border: 5px orange;
-    border-style: solid;
-    border-width: 5px;
-    padding: 50px;
-    margin: 20px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79);
+@media (max-width: 1000px) {
+  .boxes {
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+.title_marg {
+  /* margin:200px; */
+  width: 100%;
+  height: 400px;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url(image/ezgif.com-optimize + \(2\).gif);
+
+  /* Background image is centered vertically and horizontally at all times */
+  background-position: center center;
+
+  /* Background image doesn't tile */
+  background-repeat: no-repeat;
+
+  /* Background image is fixed in the viewport so that it doesn't move when
+the content's height is greater than the image's height */
+  background-attachment: fixed;
+
+  /* This is what makes the background image rescale based
+on the container's size */
+  background-size: cover;
+
+  /* Set a background color that will be displayed
+while the background image is loading */
+  background-color: #333;
+}
+#Main {
+  margin-top: 1em;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 50%;
+}
+
+.boxes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+}
+.box {
+  background-color: orange;
+  width: 300px;
+  height: auto;
+  border: 5px orange;
+  border-style: solid;
+  border-width: 5px;
+  padding: 50px;
+  margin: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79);
+}
+.box:hover {
+  border-width: 0px;
+  outline-color: orange;
+  outline-style: solid;
+  outline-width: 2px;
+  cursor: grab;
+}
+.black {
+  width: 20%;
+  background-color: black;
+  height: 100vh;
+}
+.white {
+  width: 80%;
+  background-color: white;
+  height: 100vh;
+}
+
+.title-people {
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align: center;
+}
+.hero-people {
+    height: 70vh;
+}
+
+.label {
+  background-color: #260044;
+  color: white;
+  width: 15%;
+  padding: 0.5em 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 10px 10px 0;
+}
+.main-prof {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.prof-content {
+    position: absolute;
+  width: 525px;
+  background-color: #260044;
+  border-radius: 10px;
+  
+  
+}
+.o-content {
+    
+    width: 525px;
+    background-color: #260044;
+    border-radius: 10px;
+    
+  }
+.prof-preview {
+    
+    width: 100%;
+    top: 242px;
+    position: absolute;
+    background-color: #260044;
+  font-family: "Jost";
+  color: white;
+  padding: 1em 1em 0em 1em;
+  border-radius: 0 0 10px 10px;
+  
 
 }
-.box:hover{
-    border-width: 0px;
-    outline-color: orange;
-    outline-style: solid;
-    outline-width: 2px;
-    cursor: grab;
+.prof-preview button {
+  float: right;
+  margin-right: 1em;
+  background-color: #d7a5ff;
+  color: #260044;
+  padding: 0.25em;
+  border-radius: 10px;
+  position: relative;
+  top: -3em;
 }
+.o-preview {
+    
+    
+    background-color: #260044;
+  font-family: "Jost";
+  color: white;
+  padding: 1em;
+}
+.o-preview button {
+  float: right;
+  margin-right: 1em;
+  background-color: #d7a5ff;
+  color: #260044;
+  padding: 0.25em;
+  border-radius: 10px;
+  position: relative;
+  top: -3em;
+}
+.line {
+  background-color: white;
+  height: 1px;
+  width: 70%;
+}
+.o-line {
+    background-color: white;
+    height: 1px;
+    width: 70%;
+  }
+.other-cards {
+  margin-top: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+.prof {
+  position: absolute;
+}
+.overlay {
+  color: white;
+  /* height: 242px; */
+  font-size: 0.7em;
+  position: absolute;
+  top: 242px;
+  width: 525px;
+  height: 0;
+   overflow: hidden;  
+  transition: 0.5s ease;
+  background-color: #260044;
+}
+.prof-content:hover .overlay {
+  height: 242px;
+  top: 0;
+}
+.overlay p {
+  font-family: "Jost";
+  color: white;
+  text-align: center;
+}
+.grey {
+    width: 25%;
+    height: 400px;
+    background-color: #333;
+}
+.parent {
+  display: flex;
+  position: relative;
+  height: 100vh;
+  z-index: 1;
+  
+}
+.profile-top {
+  position: relative;
+    bottom: 100vh;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+
+}
+.blank {
+  width: 10%;
+}
+.grey {
+    background-color: #333;
+    width: 25%;
+    height: 500px;
+}
+.yellow {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center;  */
+    padding: 0 2em 0 4em;
+    justify-content: center;
+    width: 65%;
+    height: 100vh;
+}
+
+.profile-body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  /* overflow: hidden; */
+}
+.name p{
+  color: #9112DF;
+  ;
+}
+.name h1 {
+  font-weight: bold;
+  font-size: 5em;
+}
+.purple-line {
+  background-color: #9112DF;
+  height: 1px;
+  width: 100%;
+}
+.about-main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  
+  justify-content: space-between;
+}
+.links ul{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-evenly;
+}
+.links li{
+  padding: 1em;
+
+}
+.links a{
+  text-decoration: none;
+}
+.links a:hover {
+  text-decoration: underline;
+  color: #9112DF;
+  cursor: pointer;
+}
+.about-content
+{
+  height: 40%;
+}
+.footersection{
+  padding-top: 20px;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: #1f1f1f;
+  color: white;
+}
+.footersection h3{
+  text-align: center;
+  font-family: 'Jost', sans-serif;
+}
+.footersection ul{
+  list-style-type: none;
+  text-align: center;
+}
+.quicklinks a{
+  color:white;
+  text-decoration: none;
+}
+.quicklinks a:hover{
+  text-decoration: underline;
+}
+.findus a{
+  color: white;
+  text-decoration: none;
+}
+.findus li{
+  display: inline;
+  margin: 7px;
+  border: 2px solid #BBBBBB;
+  border-radius: 50%;
+  text-align: center;
+  
+}
+.findus li .fa-facebook{
+  padding-left: 5px;
+  padding-right: 1px;
+}
+.findus li .fa-instagram{
+  padding-left: 5px;
+  padding-right:0.5px;
+}
+.findus li .fa-linkedin{
+  padding-left: 4px;
+}
+.findus li .fa-youtube{
+  padding-left: 2px;
+  padding-right: 2px;
+}
+.findus li a .fa-facebook:hover{
+  color:rgb(0, 132, 255);
+  transition: all 0.5s ease-in;
+  
+}
+.findus li a .fa-instagram:hover{
+  color:rgb(255, 7, 222);
+  transition: all 0.5s ease-in;
+  
+}
+.findus li a .fa-linkedin:hover{
+  color:rgb(0, 132, 255);
+  transition: all 0.5s ease-in;
+  
+}
+.findus li a .fa-youtube:hover{
+  color:red;
+  transition: all 0.5s ease-in;
+  
+}
+
