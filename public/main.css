@@ -23,16 +23,17 @@ p {
   font-family: "Jost", sans-serif;
 }
 .header {
-  background-color: #333;
+  background-color: #1f1f1f;
 }
 
 #nav_bar {
   /* width: 100%; */
+    height: 64px;
   display: flex;
-  padding: 10px;
+  /* padding: 10px; */
   justify-content: space-between;
   align-items: center;
-  color: black;
+  color:  #1f1f1f;;
   /* background-color: rgb(0, 179, 255); */
 }
 
@@ -50,6 +51,9 @@ p {
   align-items: center;
   gap: 100px;
 }
+#combinedlogo{
+    margin-left: 48px;
+}
 #nav_items {
   margin: auto;
   list-style-type: none;
@@ -59,26 +63,36 @@ p {
 }
 .nav_item_list {
   padding: 20px;
-  font-size: larger;
+  font-size: 16px;
   font-weight: bolder;
 }
 
 #join_us_button {
-  font-size: larger;
-  color: black;
+  font-size: 16px;
+  color: white;
   font-weight: bolder;
-  background-color: orange;
+  /* background-color: #D7A5FF; */
   padding: 0px 10px;
-  border: 2px solid orange;
-  margin-left: 50px;
+  /* border: 2px solid #D7A5FF; */
+    margin-left: 30px;
+  margin-right: 60px;
   border-radius: 7px;
+    background: linear-gradient(to right, #A028FF 50%, #D7A5FF 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
 }
 #join_us_button:hover {
-  border-width: 4px;
-  background-color: yellow;
-  transition-duration: 0.4s;
-  cursor: pointer;
-  border-color: yellow;
+    /* border-width: 4px; */
+    /* margin-left: 48px; */
+    text-decoration: none !important;
+    background-color: #A028FF;
+    background-position: left bottom;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    cursor: pointer;
+    /* border-color: yellow; */
 }
 .bar {
   display: block;
@@ -125,51 +139,62 @@ p {
     transform: translateY(-8.4px) rotate(-45deg);
     /* width: 40px;
         height: 3px; */
-  }
-  #nav_bar {
-    display: flex;
-    flex-direction: column;
-  }
-  #div2 {
-    display: none;
-    /* left:-100%; */
-  }
-  #div2.active {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    transition: 0.5s ease-in;
-  }
-  #nav_items {
-    /* top:70px; */
-    list-style-type: none;
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
-  }
-  .boxes {
-    display: grid;
-    grid-template-columns: auto auto !important;
-  }
+
+    }
+    #nav_bar{
+        display: flex;
+        flex-direction: column;
+    }
+    #div2{
+        display: none;
+        /* left:-100%; */
+    }
+    #div2.active{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        background-color: #1f1f1f;
+        transition: 0.5s ease-in;
+        position: relative;
+    }
+    #nav_items{
+        /* top:70px; */
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    #join_us_button{
+        margin-left: 0;
+    }
+    .boxes{
+        display: grid;
+        grid-template-columns: auto auto !important; 
+    }
+
+    
 }
-@media (max-width: 1000px) {
-  .boxes {
-    display: flex !important;
-    flex-direction: column;
-    align-items: center;
-  }
+@media (max-width:1000px){
+    .boxes{
+        display: flex !important;
+        flex-direction: column;
+        align-items: center;
+        box-sizing: border-box;
+    }
 }
 
-.title_marg {
-  /* margin:200px; */
-  width: 100%;
-  height: 400px;
-  color: white;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-image: url(image/ezgif.com-optimize + \(2\).gif);
+.title_marg{
+    /* margin:200px; */
+    width: 100%;
+    height: 553px;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    /* justify-content: space-between; */
+    
+    background-image: url(image/ezgif.com-optimize+\(2\).gif);
 
   /* Background image is centered vertically and horizontally at all times */
   background-position: center center;
@@ -187,37 +212,53 @@ on the container's size */
 
   /* Set a background color that will be displayed
 while the background image is loading */
-  background-color: #333;
+background-color: #1f1f1f;
 }
-#Main {
-  margin-top: 1em;
-  display: flex;
-  flex-direction: column;
-  /* justify-content: center; */
-  align-items: center;
+#Main{
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center;  */
+    align-items: center;
 }
-.container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: 50%;
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 90%;
+    /* margin: 50px 10px;
+    padding: 50px; */
+}
+.quotation{
+    background-color: #1f1f1f;
+    color: white;
+    height: 59px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .boxes {
   display: grid;
   grid-template-columns: auto auto auto;
 }
-.box {
-  background-color: orange;
-  width: 300px;
-  height: auto;
-  border: 5px orange;
-  border-style: solid;
-  border-width: 5px;
-  padding: 50px;
-  margin: 20px;
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79);
+.box{
+    background-color: #F3E4FF;
+    width: 411px;
+    height: 576px;
+    border: 5px #F3E4FF;
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 4px;
+    padding: 50px;
+    margin: 20px;
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.8), 0 6px 20px 0 rgba(0, 0, 0, 0.79); */
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+
 }
 .box:hover {
   border-width: 0px;
@@ -516,3 +557,10 @@ while the background image is loading */
   
 }
 
+
+
+
+/* Not working,find out reason */
+/* .box > h3 {
+    font-size: 36px;
+} */
