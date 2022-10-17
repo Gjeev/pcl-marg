@@ -2,7 +2,7 @@
 <html lang="en">
 <%-include("./partials/head.ejs")%>
 
-  <body>
+  <body class="index-body">
     <%- include("./partials/header.ejs")%>
       <div class="title_marg image-bg">
         <div class="memoryAndAnalysisImage"><img src="image/set2 title.png" alt="Couldn't load image" height="553px" width="100%"></div>
@@ -11,7 +11,7 @@
       <div class="quotation">
         <center><i>Memory is the treasury and guardian of all things. -Cicero lorem40</i></center>
       </div>
-      <div id="Main" style="height: 1000px">
+      <div id="Main">
 
 
         <div class="container">
@@ -34,7 +34,7 @@
         <div class="boxes">
           <div class="box">
             <center>
-              <h3 style="font-size: 36px;">News</h3>
+              <h3>News</h3>
             </center><br>
             <div class="inner_boxes">
               <div class="inner_box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vero in mollitia
@@ -51,7 +51,7 @@
           </div>
           <div class="box">
             <center>
-              <h3 style="font-size: 36px;">Blogs</h3>
+              <h3>Blogs</h3>
             </center><br>
             <div class="inner_boxes">
               <div class="inner_box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vero in mollitia
@@ -68,7 +68,7 @@
           </div>
           <div class="box">
             <center>
-              <h3 style="font-size: 36px;">Posts</h3>
+              <h3>Posts</h3>
             </center><br>
             <div class="inner_boxes">
               <div class="inner_box">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Incidunt vero in mollitia
@@ -89,8 +89,9 @@
       <div class="carousel">
 
       </div>
-      <%- include("./partials/footer.ejs")%>
-
+      <div class="footer">
+        <%- include("./partials/footer.ejs")%>
+      </div>
   </body>
 
 </html>

@@ -170,16 +170,14 @@ p{
     #join_us_button{
         margin-left: 0;
     }
-    .boxes{
-        display: grid;
-        grid-template-columns: auto auto !important; 
-    }
+    
+    
 
     
 }
 @media (max-width:1000px){
     .boxes{
-        display: flex !important;
+        display: flex ;
         flex-direction: column;
         align-items: center;
         box-sizing: border-box;
@@ -221,8 +219,8 @@ background-color: #1f1f1f;
     margin-top: 1em;
     display: flex;
     flex-direction: column;
-    /* justify-content: center;  */
     align-items: center;
+    padding-bottom: 40px;
 }
 .container{
     display: flex;
@@ -243,8 +241,16 @@ background-color: #1f1f1f;
 }
 
 .boxes{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    /* display: grid;
+    grid-template-columns: auto auto auto; */
+    display: flex;
+    justify-content: space-evenly;
+}
+@media (max-width:1200px){
+    .boxes{
+        display: flex;
+        flex-direction: column;
+    }
 }
 .box{
     background-color: #F3E4FF;
@@ -263,11 +269,14 @@ background-color: #1f1f1f;
     /* justify-content: space-between; */
 
 }
-.box:hover{
+/* .box:hover{
     border-width: 0px;
     outline-color: #F3E4FF;
     outline-style: solid;
     outline-width: 2px;
+} */
+.box h3 {
+    font-size: 36px;
 }
 .inner_boxes{
     display: flex;
@@ -324,8 +333,85 @@ background-color: #1f1f1f;
   }
 
 
+.footer {
+    /* width: 100%; */
+    background-color: #1f1f1f;
+    color: white;
+}
+.footersection{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #1f1f1f;
+    color: white;
+}
+.footersection h3{
+    text-align: center;
+    font-family: 'Jost', sans-serif;
+}
+.footersection ul{
+    list-style-type: none;
+    text-align: center;
+}
+.quicklinks a{
+    color:white;
+    text-decoration: none;
+}
+.quicklinks a:hover{
+    text-decoration: underline;
+}
+.findus a{
+    color: white;
+    text-decoration: none;
+}
+.findus li{
+    display: inline;
+    margin: 7px;
+    border: 2px solid #BBBBBB;
+    border-radius: 50%;
+    text-align: center;
+    
+}
+.findus li .fa-facebook{
+    padding-left: 5px;
+    padding-right: 1px;
+}
+.findus li .fa-instagram{
+    padding-left: 5px;
+    padding-right:0.5px;
+}
+.findus li .fa-linkedin{
+    padding-left: 4px;
+}
+.findus li .fa-youtube{
+    padding-left: 2px;
+    padding-right: 2px;
+}
+.findus li a .fa-facebook:hover{
+    color:rgb(0, 132, 255);
+    transition: all 0.5s ease-in;
+    
+}
+.findus li a .fa-instagram:hover{
+    color:rgb(255, 7, 222);
+    transition: all 0.5s ease-in;
+    
+}
+.findus li a .fa-linkedin:hover{
+    color:rgb(0, 132, 255);
+    transition: all 0.5s ease-in;
+    
+}
+.findus li a .fa-youtube:hover{
+    color:red;
+    transition: all 0.5s ease-in;
+    
+}
 
-/* Not working,find out reason */
-/* .box > h3 {
-    font-size: 36px;
-} */
+.linefooter{
+    height: 1px;
+    background-color: white;
+    width: 90%;
+    margin: 5%;
+    
+}
