@@ -352,6 +352,10 @@ background-color: #1f1f1f;
   position: relative;
   top: -3em;
 }
+.prof-preview a{
+  text-decoration: none;
+
+}
 .o-preview {
     
     
@@ -359,6 +363,9 @@ background-color: #1f1f1f;
   font-family: "Jost";
   color: white;
   padding: 1em;
+}
+.o-preview a{
+  text-decoration: none;
 }
 .o-preview button {
   float: right;
@@ -368,7 +375,7 @@ background-color: #1f1f1f;
   padding: 0.25em;
   border-radius: 10px;
   position: relative;
-  top: -3em;
+  top: -2em;
 }
 .line {
   background-color: white;
@@ -449,6 +456,7 @@ background-color: #1f1f1f;
     justify-content: center;
     width: 65%;
     height: 100vh;
+    flex-wrap: wrap;
 }
 
 .profile-body {
@@ -474,13 +482,16 @@ background-color: #1f1f1f;
   display: flex;
   flex-direction: row;
   width: 100%;
-  
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .links ul{
   list-style-type: none;
   display: flex;
   justify-content: space-evenly;
+  width: 100%;
+  flex-wrap: wrap;
+  
 }
 .links li{
   padding: 1em;
@@ -494,6 +505,7 @@ background-color: #1f1f1f;
   color: #9112DF;
   cursor: pointer;
 }
+
 .about-content
 {
   height: 40%;
